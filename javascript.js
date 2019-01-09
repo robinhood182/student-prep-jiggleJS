@@ -9,7 +9,7 @@ function setStyle(objId, propertyObject) {
 const grow = () => {
   let boxHeight = document.getElementById('box').style.height.slice(0, -2);
   let boxWidth = document.getElementById('box').style.width.slice(0, -2);
-  setStyle('box', { 'height':`${boxHeight * 1.2}px`, 'width':`${boxWidth * 1.2}px`, 'transition': 'height .9s ease-in, width 1s ease-out' });
+  setStyle('box', { 'height':`${boxHeight * 1.2}px`, 'width':`${boxWidth * 1.2}px`, 'transition': 'height .75s cubic-bezier(0.6, -1, 0.74, 0.05), width .75s cubic-bezier(0.6, -1, 0.74, 0.05)' });
 }
 
 const getRandomRgbValues = (min, max) => {
