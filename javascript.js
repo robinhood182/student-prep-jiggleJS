@@ -13,7 +13,7 @@ const grow = () => {
   setStyle('box', { 'height':`${boxHeight * 1.1}px`, 'width':`${boxWidth * 1.1}px`, 'transition': 'height 1s ease-in-out, width 1s ease-in-out' });
 }
 
-const paintBlue = () => setStyle('box', {'background-color':'steelblue'});
+const changeColor = () => setStyle('box', {'background-color':'steelblue'});
 
 document.getElementById('box').style.opacity = 1;
 
@@ -26,7 +26,12 @@ const alanWalker = () => {
   setStyle('box', { 'opacity': boxOpacity - 0.5, 'transition': 'opacity 1s ease-in-out' });
 }
 
+const reset = () => {
+  setStyle('box', { 'height': '150px', 'width': '150px', 'opacity': 1, 'background-color': 'orange' })
+}
+
 document.getElementById('button1').onclick = grow;
-document.getElementById('button2').onclick = paintBlue;
+document.getElementById('button2').onclick = changeColor;
 document.getElementById('button3').onclick = alanWalker;
+document.getElementById('button4').onclick = reset;
 
