@@ -1,2 +1,2 @@
-# student-prep-jiggleJS
-Student prep work
+# Student-prep-jiggleJS
+Student prep work using vanilla JavaScript
